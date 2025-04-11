@@ -23,17 +23,6 @@ model-viewer {
   overflow: hidden;
 }
 
-header {
-  margin-top: 3em;
-  text-align: center;
-  color: white;
-}
-
-header h1 {
-  font-size: 2em;
-  font-weight: 900;
-  
-}
 .progress-bar {
   display: block;
   width: 33%;
@@ -156,4 +145,57 @@ model-viewer > #ar-prompt > img {
 
 .senai-title {
   color: red;
+}
+
+header {
+  margin-top: 3em;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 900;
+  
+}
+/*menu hamburger*/
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid black; /* contorno preto */
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 28px;
+  color: black;
+  padding: 8px 12px;
+}
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: right 0.3s ease;
+  padding-top: 60px;
+  z-index: 999;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+.side-menu a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.side-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
