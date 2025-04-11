@@ -11,3 +11,6 @@ const onProgress = (event) => {
   }
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
+function toggleMenu() {
+  document.getElementById('sideMenu').classList.toggle('open');
+}
